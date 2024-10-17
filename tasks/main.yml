@@ -10,6 +10,7 @@
     - { path: "{{ overleaf_mongodb_datadir }}", recurse: no, mode: '0777'}
     - { path: "{{ overleaf_redis_datadir }}", recurse: no, mode: '0777'}
     - { path: "{{ sharelatex_datadir }}", recurse: no, mode: '0777'}
+    - { path: "{{  node_home }}", recurse: yes, mode: '0777'}
 
 - name: Create overleaf configuration files
   become: yes
